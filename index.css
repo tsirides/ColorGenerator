@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+input,
+button,
+select,
+option {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.color-item {
+  display: flex;
+  flex-direction: column;
+}
+#color {
+  width: 6%;
+  border: none;
+  background: #e5e5e5;
+  height: 42px;
+  border-radius: 4px;
+}
+#color::-webkit-color-swatch {
+  border: 1px solid #313131;
+  border-radius: 3px;
+}
+.color-mode {
+  width: 80%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #cfcfcf;
+}
+#get-color {
+  background: white;
+  border: 1px solid #cfcfcf;
+  width: 20%;
+  padding: 8px;
+  border-radius: 3px;
+}
+.color-render {
+  margin: auto 0;
+  height: 100%;
+  width: 100%;
+}
+#hex-codes {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+.hex-value {
+  padding: 16px 0;
+  text-align: center;
+}
+
+#color-form {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  box-shadow: 0px 5px 32px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  justify-content: space-between;
+}

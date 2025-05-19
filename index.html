@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form id="color-form">
+      <input id="color" type="color" aria-label="Color Picker" />
+      <select id="color-mode" name="color-mode" class="color-mode">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Dark Monochrome</option>
+        <option value="monochrome-light">Light Monochrome</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic Complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">quad</option>
+      </select>
+      <button id="get-color">Get color scheme</button>
+    </form>
+
+    <div id="hex-codes"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
